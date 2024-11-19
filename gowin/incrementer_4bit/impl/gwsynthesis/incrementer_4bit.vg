@@ -1,0 +1,180 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.10.02"
+//Tue Nov 19 17:36:07 2024
+
+//Source file index table:
+//file0 "\/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/incrementor_4bit.v"
+//file1 "\/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/half_adder.v"
+`timescale 100 ps/100 ps
+module half_adder (
+  a_Z,
+  n4_6
+)
+;
+input [1:1] a_Z;
+output n4_6;
+wire VCC;
+wire GND;
+  INV n4_s3 (
+    .O(n4_6),
+    .I(a_Z[1]) 
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+endmodule /* half_adder */
+module half_adder_0 (
+  a_Z,
+  x_d,
+  y_d
+)
+;
+input [1:1] a_Z;
+input [1:1] x_d;
+output [1:1] y_d;
+wire VCC;
+wire GND;
+  LUT2 y_d_1_s (
+    .F(y_d[1]),
+    .I0(a_Z[1]),
+    .I1(x_d[1]) 
+);
+defparam y_d_1_s.INIT=4'h9;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+endmodule /* half_adder_0 */
+module half_adder_1 (
+  a_Z,
+  x_d,
+  y_d
+)
+;
+input [1:1] a_Z;
+input [2:1] x_d;
+output [2:2] y_d;
+wire VCC;
+wire GND;
+  LUT3 y_d_2_s (
+    .F(y_d[2]),
+    .I0(a_Z[1]),
+    .I1(x_d[1]),
+    .I2(x_d[2]) 
+);
+defparam y_d_2_s.INIT=8'hE1;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+endmodule /* half_adder_1 */
+module half_adder_2 (
+  a_Z,
+  x_d,
+  y_d
+)
+;
+input [1:1] a_Z;
+input [3:1] x_d;
+output [3:3] y_d;
+wire VCC;
+wire GND;
+  LUT4 y_d_3_s (
+    .F(y_d[3]),
+    .I0(a_Z[1]),
+    .I1(x_d[1]),
+    .I2(x_d[2]),
+    .I3(x_d[3]) 
+);
+defparam y_d_3_s.INIT=16'hFE01;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+endmodule /* half_adder_2 */
+module incrementor_4bit (
+  x,
+  y
+)
+;
+input [3:0] x;
+output [3:0] y;
+wire n4_6;
+wire [1:1] a_Z;
+wire [3:1] x_d;
+wire [1:1] y_d;
+wire [2:2] y_d_0;
+wire [3:3] y_d_1;
+wire VCC;
+wire GND;
+  IBUF x_0_ibuf (
+    .O(a_Z[1]),
+    .I(x[0]) 
+);
+  IBUF x_1_ibuf (
+    .O(x_d[1]),
+    .I(x[1]) 
+);
+  IBUF x_2_ibuf (
+    .O(x_d[2]),
+    .I(x[2]) 
+);
+  IBUF x_3_ibuf (
+    .O(x_d[3]),
+    .I(x[3]) 
+);
+  OBUF y_0_obuf (
+    .O(y[0]),
+    .I(n4_6) 
+);
+  OBUF y_1_obuf (
+    .O(y[1]),
+    .I(y_d[1]) 
+);
+  OBUF y_2_obuf (
+    .O(y[2]),
+    .I(y_d_0[2]) 
+);
+  OBUF y_3_obuf (
+    .O(y[3]),
+    .I(y_d_1[3]) 
+);
+  half_adder halfAdder1 (
+    .a_Z(a_Z[1]),
+    .n4_6(n4_6)
+);
+  half_adder_0 halfAdder2 (
+    .a_Z(a_Z[1]),
+    .x_d(x_d[1]),
+    .y_d(y_d[1])
+);
+  half_adder_1 halfAdder3 (
+    .a_Z(a_Z[1]),
+    .x_d(x_d[2:1]),
+    .y_d(y_d_0[2])
+);
+  half_adder_2 halfAdder4 (
+    .a_Z(a_Z[1]),
+    .x_d(x_d[3:1]),
+    .y_d(y_d_1[3])
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* incrementor_4bit */

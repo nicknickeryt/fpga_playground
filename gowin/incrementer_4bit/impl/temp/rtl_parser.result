@@ -1,0 +1,44 @@
+[
+ {
+  "InstFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/incrementor_4bit.v",
+  "InstLine" : 23,
+  "InstName" : "incrementor_4bit",
+  "ModuleFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/incrementor_4bit.v",
+  "ModuleLine" : 23,
+  "ModuleName" : "incrementor_4bit",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/incrementor_4bit.v",
+    "InstLine" : 32,
+    "InstName" : "halfAdder1",
+    "ModuleFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/half_adder.v",
+    "ModuleLine" : 23,
+    "ModuleName" : "half_adder"
+   },
+   {
+    "InstFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/incrementor_4bit.v",
+    "InstLine" : 33,
+    "InstName" : "halfAdder2",
+    "ModuleFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/half_adder.v",
+    "ModuleLine" : 23,
+    "ModuleName" : "half_adder"
+   },
+   {
+    "InstFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/incrementor_4bit.v",
+    "InstLine" : 34,
+    "InstName" : "halfAdder3",
+    "ModuleFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/half_adder.v",
+    "ModuleLine" : 23,
+    "ModuleName" : "half_adder"
+   },
+   {
+    "InstFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/incrementor_4bit.v",
+    "InstLine" : 35,
+    "InstName" : "halfAdder4",
+    "ModuleFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/half_adder.v",
+    "ModuleLine" : 23,
+    "ModuleName" : "half_adder"
+   }
+  ]
+ }
+]
