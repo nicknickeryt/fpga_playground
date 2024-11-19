@@ -1,7 +1,0 @@
-Running: xsim.dir/incrementor_4bit_tb_behav/xsimk -simmode gui -wdb incrementor_4bit_tb_behav.wdb -simrunnum 0 -socket 44281
-Design successfully loaded
-Design Loading Memory Usage: 20024 KB (Peak: 20632 KB)
-Design Loading CPU Usage: 40 ms
-Simulation completed
-Simulation Memory Usage: 101760 KB (Peak: 159292 KB)
-Simulation CPU Usage: 50 ms
