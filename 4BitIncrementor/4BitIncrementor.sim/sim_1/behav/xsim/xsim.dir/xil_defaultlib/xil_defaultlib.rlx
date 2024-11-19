@@ -1,0 +1,9 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/nick/Dokumenty/AGH/CUE/Verilog/lab1/4BitIncrementor/4BitIncrementor.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+/home/nick/Dokumenty/AGH/CUE/Verilog/lab1/4BitIncrementor/4BitIncrementor.srcs/sim_1/new/half_adder_tb.v,1732022847,verilog,,,,half_adder_tb,,,,,,,,
+/home/nick/Dokumenty/AGH/CUE/Verilog/lab1/4BitIncrementor/4BitIncrementor.srcs/sim_1/new/incrementor_4bit_tb.v,1732024219,verilog,,,,incrementor_4bit_tb,,,,,,,,
+/home/nick/Dokumenty/AGH/CUE/Verilog/lab1/4BitIncrementor/4BitIncrementor.srcs/sources_1/new/half_adder.v,1732022522,verilog,,/home/nick/Dokumenty/AGH/CUE/Verilog/lab1/4BitIncrementor/4BitIncrementor.srcs/sources_1/new/incrementor_4bit.v,,half_adder,,,,,,,,
+/home/nick/Dokumenty/AGH/CUE/Verilog/lab1/4BitIncrementor/4BitIncrementor.srcs/sources_1/new/incrementor_4bit.v,1732024163,verilog,,/home/nick/Dokumenty/AGH/CUE/Verilog/lab1/4BitIncrementor/4BitIncrementor.srcs/sim_1/new/incrementor_4bit_tb.v,,incrementor_4bit,,,,,,,,
