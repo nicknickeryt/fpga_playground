@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../bin22s.srcs/sources_1/new/bin22s.v" \
+"../../../../bin22s.srcs/sources_1/new/half_adder.v" \
+"../../../../bin22s.srcs/sources_1/new/incrementor_4bit.v" \
+"../../../../bin22s.srcs/sim_1/new/bin22s_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
