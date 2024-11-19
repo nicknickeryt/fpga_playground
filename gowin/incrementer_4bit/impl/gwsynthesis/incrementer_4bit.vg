@@ -1,23 +1,23 @@
 //
 //Written by GowinSynthesis
-//Tool Version "V1.9.10.02"
-//Tue Nov 19 17:36:07 2024
+//Tool Version "V1.9.10.03"
+//Wed Nov 20 00:35:19 2024
 
 //Source file index table:
-//file0 "\/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/incrementor_4bit.v"
-//file1 "\/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/half_adder.v"
+//file0 "\/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/src/half_adder.v"
+//file1 "\/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/src/incrementor_4bit.v"
 `timescale 100 ps/100 ps
 module half_adder (
   a_Z,
-  n4_6
+  y_d_0_4
 )
 ;
 input [1:1] a_Z;
-output n4_6;
+output y_d_0_4;
 wire VCC;
 wire GND;
-  INV n4_s3 (
-    .O(n4_6),
+  INV y_d_0_s0 (
+    .O(y_d_0_4),
     .I(a_Z[1]) 
 );
   VCC VCC_cZ (
@@ -43,7 +43,7 @@ wire GND;
     .I0(a_Z[1]),
     .I1(x_d[1]) 
 );
-defparam y_d_1_s.INIT=4'h9;
+defparam y_d_1_s.INIT=4'h6;
   VCC VCC_cZ (
     .V(VCC)
 );
@@ -68,7 +68,7 @@ wire GND;
     .I1(x_d[1]),
     .I2(x_d[2]) 
 );
-defparam y_d_2_s.INIT=8'hE1;
+defparam y_d_2_s.INIT=8'h78;
   VCC VCC_cZ (
     .V(VCC)
 );
@@ -94,7 +94,7 @@ wire GND;
     .I2(x_d[2]),
     .I3(x_d[3]) 
 );
-defparam y_d_3_s.INIT=16'hFE01;
+defparam y_d_3_s.INIT=16'h7F80;
   VCC VCC_cZ (
     .V(VCC)
 );
@@ -109,7 +109,7 @@ module incrementor_4bit (
 ;
 input [3:0] x;
 output [3:0] y;
-wire n4_6;
+wire y_d_0_4;
 wire [1:1] a_Z;
 wire [3:1] x_d;
 wire [1:1] y_d;
@@ -135,7 +135,7 @@ wire GND;
 );
   OBUF y_0_obuf (
     .O(y[0]),
-    .I(n4_6) 
+    .I(y_d_0_4) 
 );
   OBUF y_1_obuf (
     .O(y[1]),
@@ -151,7 +151,7 @@ wire GND;
 );
   half_adder halfAdder1 (
     .a_Z(a_Z[1]),
-    .n4_6(n4_6)
+    .y_d_0_4(y_d_0_4)
 );
   half_adder_0 halfAdder2 (
     .a_Z(a_Z[1]),

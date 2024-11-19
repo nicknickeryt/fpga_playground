@@ -37,7 +37,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <ul>
 <li><a href="#Resource_Usage_Summary" style=" font-size: 14px;">Resource Usage Summary</a></li>
 <li><a href="#I/O_Bank_Usage_Summary" style=" font-size: 14px;">I/O Bank Usage Summary</a></li>
-<li><a href="#Global_Clock_Usage_Summary" style=" font-size: 14px;">Global Clock Usage Summary</a></li>
+<li><a href="#Global_Clock_Usage_Summary" style=" font-size: 14px;">Clock Resource Usage Summary</a></li>
 <li><a href="#Global_Clock_Signals" style=" font-size: 14px;">Global Clock Signals</a></li>
 <li><a href="#Pinout_by_Port_Name" style=" font-size: 14px;">Pinout by Port Name</a></li>
 <li><a href="#All_Package_Pins" style=" font-size: 14px;">All Package Pins</a></li>
@@ -55,11 +55,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Design File</td>
-<td>/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/impl/gwsynthesis/incrementer_4bit.vg</td>
+<td>/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/impl/gwsynthesis/incrementer_4bit.vg</td>
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/incrementer_4bit.cst</td>
+<td>/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/src/incrementer_4bit.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraints File</td>
@@ -67,7 +67,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Tool Version</td>
-<td>V1.9.10.02</td>
+<td>V1.9.10.03</td>
 </tr>
 <tr>
 <td class="label">Part Number</td>
@@ -79,7 +79,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Tue Nov 19 17:36:22 2024
+<td>Wed Nov 20 00:35:25 2024
 </td>
 </tr>
 <tr>
@@ -93,24 +93,24 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td class="label">Place & Route Process</td>
 <td>Running placement:
-   Placement Phase 0: CPU time = 0h 0m 0.008s, Elapsed time = 0h 0m 0.008s
-   Placement Phase 1: CPU time = 0h 0m 0.474s, Elapsed time = 0h 0m 0.464s
-   Placement Phase 2: CPU time = 0h 0m 0.003s, Elapsed time = 0h 0m 0.003s
-   Placement Phase 3: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
-   Total Placement: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
+   Placement Phase 0: CPU time = 0h 0m 0.011s, Elapsed time = 0h 0m 0.011s
+   Placement Phase 1: CPU time = 0h 0m 0.202s, Elapsed time = 0h 0m 0.201s
+   Placement Phase 2: CPU time = 0h 0m 0.002s, Elapsed time = 0h 0m 0.002s
+   Placement Phase 3: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+   Total Placement: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
 Running routing:
    Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-   Routing Phase 1: CPU time = 0h 0m 0.261s, Elapsed time = 0h 0m 0.258s
-   Routing Phase 2: CPU time = 0h 0m 0.105s, Elapsed time = 0h 0m 0.103s
+   Routing Phase 1: CPU time = 0h 0m 0.111s, Elapsed time = 0h 0m 0.111s
+   Routing Phase 2: CPU time = 0h 0m 0.06s, Elapsed time = 0h 0m 0.059s
    Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-   Total Routing: CPU time = 0h 0m 0.366s, Elapsed time = 0h 0m 0.361s
+   Total Routing: CPU time = 0h 0m 0.171s, Elapsed time = 0h 0m 0.17s
 Generate output files:
-   CPU time = 0h 0m 0.952s, Elapsed time = 0h 0m 0.938s
+   CPU time = 0h 0m 0.52s, Elapsed time = 0h 0m 0.491s
 </td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s, Peak memory usage = 257MB</td>
+<td>CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s, Peak memory usage = 244MB</td>
 </tr>
 </table>
 <br/>
@@ -140,7 +140,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>0/3570</td>
+<td>0/3573</td>
 <td>0%</td>
 </tr>
 <tr>
@@ -155,12 +155,12 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --I/O Register as Latch</td>
-<td>0/114</td>
+<td>0/117</td>
 <td>0%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --I/O Register as FF</td>
-<td>0/114</td>
+<td>0/117</td>
 <td>0%</td>
 </tr>
 <tr>
@@ -170,8 +170,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">I/O Port</td>
-<td>8</td>
-<td>-</td>
+<td>8/39</td>
+<td>21%</td>
 </tr>
 <tr>
 <td class="label">I/O Buf</td>
@@ -193,109 +193,52 @@ Generate output files:
 <td>0</td>
 <td>-</td>
 </tr>
-<tr>
-<td class="label">IOLOGIC</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td class="label">BSRAM</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td class="label">DSP</td>
-<td>0</td><td>0%</td>
-</tr>
-<tr>
-<td class="label">PLL</td>
-<td>0/2</td>
-<td>0%</td>
-</tr>
-<tr>
-<td class="label">DCS</td>
-<td>0/4</td>
-<td>0%</td>
-</tr>
-<tr>
-<td class="label">DQCE</td>
-<td>0/12</td>
-<td>0%</td>
-</tr>
-<tr>
-<td class="label">OSC</td>
-<td>0/1</td>
-<td>0%</td>
-</tr>
-<tr>
-<td class="label">CLKDIV</td>
-<td>0/6</td>
-<td>0%</td>
-</tr>
-<tr>
-<td class="label">DLLDLY</td>
-<td>0/6</td>
-<td>0%</td>
-</tr>
-<tr>
-<td class="label">DHCEN</td>
-<td>0/12</td>
-<td>0%</td>
-</tr>
 </table>
 <h2><a name="I/O_Bank_Usage_Summary">I/O Bank Usage Summary:</a></h2>
 <table class="summary_table">
 <tr>
 <td class="label"><b>I/O Bank</b></td>
-<td><b>Usage</b></td>
+<td><b>Usage</b></td><td><b>Utilization</b></td>
 </tr>
 <tr>
 <td class="label">bank 0</td>
-<td>1/8(12%)</td>
+<td>1/9</td><td>12%</td>
 </tr>
 <tr>
 <td class="label">bank 1</td>
-<td>3/10(30%)</td>
+<td>3/10</td><td>30%</td>
 </tr>
 <tr>
 <td class="label">bank 2</td>
-<td>4/9(44%)</td>
+<td>4/9</td><td>45%</td>
 </tr>
 <tr>
 <td class="label">bank 3</td>
-<td>0/11(0%)</td>
+<td>0/11</td><td>0%</td>
 </tr>
 </table>
 <br/>
-<h2><a name="Global_Clock_Usage_Summary">Global Clock Usage Summary:</a></h2>
+<h2><a name="Global_Clock_Usage_Summary">Clock Resource Usage Summary:</a></h2>
 <table class="summary_table">
 <tr>
-<td class="label"><b>Global Clock</b></td>
+<td class="label"><b>Clock Resource</b></td>
 <td><b>Usage</b></td>
+<td><b>Utilization</b></td>
 </tr>
 <tr>
 <td class="label">PRIMARY</td>
-<td>0/8(0%)</td>
+<td>0/8</td>
+<td>0%</td>
 </tr>
 <tr>
 <td class="label">LW</td>
-<td>0/8(0%)</td>
+<td>0/8</td>
+<td>0%</td>
 </tr>
 <tr>
 <td class="label">GCLK_PIN</td>
-<td>0/5(0%)</td>
-</tr>
-<tr>
-<td class="label">PLL</td>
-<td>0/2(0%)</td>
-</tr>
-<tr>
-<td class="label">CLKDIV</td>
-<td>0/6(0%)</td>
-</tr>
-<tr>
-<td class="label">DLLDLY</td>
-<td>0/6(0%)</td>
+<td>0/5</td>
+<td>0%</td>
 </tr>
 </table>
 <br/>
@@ -330,7 +273,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">x[0]</td>
-<td></td>
+<td>-</td>
 <td>29/2</td>
 <td>Y</td>
 <td>in</td>
@@ -348,7 +291,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">x[1]</td>
-<td></td>
+<td>-</td>
 <td>30/2</td>
 <td>Y</td>
 <td>in</td>
@@ -366,7 +309,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">x[2]</td>
-<td></td>
+<td>-</td>
 <td>28/2</td>
 <td>Y</td>
 <td>in</td>
@@ -384,7 +327,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">x[3]</td>
-<td></td>
+<td>-</td>
 <td>27/2</td>
 <td>Y</td>
 <td>in</td>
@@ -402,7 +345,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">y[0]</td>
-<td></td>
+<td>-</td>
 <td>40/1</td>
 <td>Y</td>
 <td>out</td>
@@ -420,7 +363,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">y[1]</td>
-<td></td>
+<td>-</td>
 <td>39/1</td>
 <td>Y</td>
 <td>out</td>
@@ -438,7 +381,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">y[2]</td>
-<td></td>
+<td>-</td>
 <td>48/1</td>
 <td>Y</td>
 <td>out</td>
@@ -456,7 +399,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">y[3]</td>
-<td></td>
+<td>-</td>
 <td>1/0</td>
 <td>Y</td>
 <td>out</td>

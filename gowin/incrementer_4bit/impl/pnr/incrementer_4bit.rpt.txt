@@ -5,92 +5,79 @@
 1. PnR Messages
 
   <Report Title>: PnR Report
-  <Design File>: /home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/impl/gwsynthesis/incrementer_4bit.vg
-  <Physical Constraints File>: /home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/incrementer_4bit.cst
+  <Design File>: /home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/impl/gwsynthesis/incrementer_4bit.vg
+  <Physical Constraints File>: /home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/src/incrementer_4bit.cst
   <Timing Constraints File>: ---
-  <Tool Version>: V1.9.10.02
+  <Tool Version>: V1.9.10.03
   <Part Number>: GW1NSR-LV4CQN48PC7/I6
   <Device>: GW1NSR-4C
-  <Created Time>:Tue Nov 19 17:36:22 2024
+  <Created Time>:Wed Nov 20 00:35:25 2024
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.008s, Elapsed time = 0h 0m 0.008s
-    Placement Phase 1: CPU time = 0h 0m 0.474s, Elapsed time = 0h 0m 0.464s
-    Placement Phase 2: CPU time = 0h 0m 0.003s, Elapsed time = 0h 0m 0.003s
-    Placement Phase 3: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
-    Total Placement: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
+    Placement Phase 0: CPU time = 0h 0m 0.011s, Elapsed time = 0h 0m 0.011s
+    Placement Phase 1: CPU time = 0h 0m 0.202s, Elapsed time = 0h 0m 0.201s
+    Placement Phase 2: CPU time = 0h 0m 0.002s, Elapsed time = 0h 0m 0.002s
+    Placement Phase 3: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    Total Placement: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
  Running routing:
     Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Routing Phase 1: CPU time = 0h 0m 0.261s, Elapsed time = 0h 0m 0.258s
-    Routing Phase 2: CPU time = 0h 0m 0.105s, Elapsed time = 0h 0m 0.103s
+    Routing Phase 1: CPU time = 0h 0m 0.111s, Elapsed time = 0h 0m 0.111s
+    Routing Phase 2: CPU time = 0h 0m 0.06s, Elapsed time = 0h 0m 0.059s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 0.366s, Elapsed time = 0h 0m 0.361s
+    Total Routing: CPU time = 0h 0m 0.171s, Elapsed time = 0h 0m 0.17s
  Generate output files:
-    CPU time = 0h 0m 0.952s, Elapsed time = 0h 0m 0.938s
+    CPU time = 0h 0m 0.52s, Elapsed time = 0h 0m 0.491s
 
- Total Time and Memory Usage: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s, Peak memory usage = 257MB
+ Total Time and Memory Usage: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s, Peak memory usage = 244MB
 
 
 3. Resource Usage Summary
 
-  ----------------------------------------------------------
-  Resources                   | Usage
-  ----------------------------------------------------------
-  Logic                       | 4/4608  <1%
-    --LUT,ALU,ROM16           | 4(4 LUT, 0 ALU, 0 ROM16)
-    --SSRAM(RAM16)            | 0
-  Register                    | 0/3570  0%
-    --Logic Register as Latch | 0/3456  0%
-    --Logic Register as FF    | 0/3456  0%
-    --I/O Register as Latch   | 0/114  0%
-    --I/O Register as FF      | 0/114  0%
-  CLS                         | 3/2304  <1%
-  I/O Port                    | 8
-  I/O Buf                     | 8
-    --Input Buf               | 4
-    --Output Buf              | 4
-    --Inout Buf               | 0
-  IOLOGIC                     | 0%
-  BSRAM                       | 0%
-  DSP                         | 0%
-  PLL                         | 0/2  0%
-  DCS                         | 0/4  0%
-  DQCE                        | 0/12  0%
-  OSC                         | 0/1  0%
-  CLKDIV                      | 0/6  0%
-  DLLDLY                      | 0/6  0%
-  DHCEN                       | 0/12  0%
-  ==========================================================
+  --------------------------------------------------------------------------------
+  Resources                   | Usage                               | Utilization
+  --------------------------------------------------------------------------------
+  Logic                       | 4/4608                              |  <1%
+    --LUT,ALU,ROM16           | 4(4 LUT, 0 ALU, 0 ROM16)            | -
+    --SSRAM(RAM16)            | 0                                   | -
+  Register                    | 0/3573                              |  0%
+    --Logic Register as Latch | 0/3456                              |  0%
+    --Logic Register as FF    | 0/3456                              |  0%
+    --I/O Register as Latch   | 0/117                               |  0%
+    --I/O Register as FF      | 0/117                               |  0%
+  CLS                         | 3/2304                              |  <1%
+  I/O Port                    | 8/39                                |  21%
+  I/O Buf                     | 8                                   | -
+    --Input Buf               | 4                                   | -
+    --Output Buf              | 4                                   | -
+    --Inout Buf               | 0                                   | -
+  ================================================================================
 
 
 
 4. I/O Bank Usage Summary
 
-  -----------------------
-  I/O Bank  | Usage       
-  -----------------------
-  bank 0   | 1/8(12%)    
-  bank 1   | 3/10(30%)   
-  bank 2   | 4/9(44%)    
-  bank 3   | 0/11(0%)    
-  =======================
+  --------------------------------------
+  I/O Bank  | Usage       | Utilization 
+  --------------------------------------
+  bank 0   | 1/9         | 12%         
+  bank 1   | 3/10        | 30%         
+  bank 2   | 4/9         | 45%         
+  bank 3   | 0/11        | 0%          
+  ======================================
 
 
-5. Global Clock Usage Summary
+5. Clock Resource Usage Summary
 
-  -------------------------------
-  Global Clock  | Usage       
-  -------------------------------
-  PRIMARY       | 0/8(0%)
-  LW            | 0/8(0%)
-  GCLK_PIN      | 0/5(0%)
-  PLL           | 0/2(0%)
-  CLKDIV        | 0/6(0%)
-  DLLDLY        | 0/6(0%)
-  ===============================
+  ------------------------------------------
+  Clock Resource| Usage         | Utilization 
+  ------------------------------------------
+  PRIMARY       | 0/8           | 0%
+  LW            | 0/8           | 0%
+  GCLK_PIN      | 0/5           | 0%
+  ==========================================
 
 
 6. Global Clock Signals
@@ -106,14 +93,14 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Port Name  | Diff Pair | Loc./Bank     | Constraint | Dir.  | Site     | IO Type    | Drive | Pull Mode | PCI Clamp | Hysteresis | Open Drain | Vref       | Single Resistor | Diff Resistor | BankVccio 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-x[0]       |           | 29/2          | Y          | in    | IOR15[B] | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
-x[1]       |           | 30/2          | Y          | in    | IOR15[A] | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
-x[2]       |           | 28/2          | Y          | in    | IOR17[A] | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
-x[3]       |           | 27/2          | Y          | in    | IOR17[B] | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
-y[0]       |           | 40/1          | Y          | out   | IOT26[B] | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
-y[1]       |           | 39/1          | Y          | out   | IOT26[A] | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
-y[2]       |           | 48/1          | Y          | out   | IOT11[A] | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
-y[3]       |           | 1/0           | Y          | out   | IOT10[A] | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
+x[0]       | -         | 29/2          | Y          | in    | IOR15[B] | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
+x[1]       | -         | 30/2          | Y          | in    | IOR15[A] | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
+x[2]       | -         | 28/2          | Y          | in    | IOR17[A] | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
+x[3]       | -         | 27/2          | Y          | in    | IOR17[B] | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
+y[0]       | -         | 40/1          | Y          | out   | IOT26[B] | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
+y[1]       | -         | 39/1          | Y          | out   | IOT26[A] | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
+y[2]       | -         | 48/1          | Y          | out   | IOT11[A] | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
+y[3]       | -         | 1/0           | Y          | out   | IOT10[A] | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
 ==================================================================================================================================================================================================================
 
 

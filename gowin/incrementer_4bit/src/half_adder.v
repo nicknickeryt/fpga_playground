@@ -27,7 +27,7 @@ module half_adder(
     output c
     );
     
-    assign s = ~(a ^ b);
+    assign s = a ^ b;
     assign c = a & b;
     
 endmodule

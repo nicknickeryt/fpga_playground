@@ -1,7 +1,7 @@
-Reading netlist file: "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/impl/gwsynthesis/incrementer_4bit.vg"
-Parsing netlist file "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/impl/gwsynthesis/incrementer_4bit.vg" completed
+Reading netlist file: "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/impl/gwsynthesis/incrementer_4bit.vg"
+Parsing netlist file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/impl/gwsynthesis/incrementer_4bit.vg" completed
 Processing netlist completed
-Reading constraint file: "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/src/incrementer_4bit.cst"
+Reading constraint file: "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/src/incrementer_4bit.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -20,10 +20,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/impl/pnr/incrementer_4bit.power.html" completed
-Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/impl/pnr/incrementer_4bit.pin.html" completed
-Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/impl/pnr/incrementer_4bit.rpt.html" completed
-Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/impl/pnr/incrementer_4bit.rpt.txt" completed
-Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/github_repo/gowin/incrementer_4bit/impl/pnr/incrementer_4bit.tr.html" completed
-Tue Nov 19 17:36:22 2024
+Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/impl/pnr/incrementer_4bit.power.html" completed
+Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/impl/pnr/incrementer_4bit.pin.html" completed
+Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/impl/pnr/incrementer_4bit.rpt.html" completed
+Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/impl/pnr/incrementer_4bit.rpt.txt" completed
+Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/incrementer_4bit/impl/pnr/incrementer_4bit.tr.html" completed
+Wed Nov 20 00:35:25 2024
 
