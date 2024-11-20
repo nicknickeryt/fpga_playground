@@ -1,0 +1,44 @@
+[
+ {
+  "InstFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/number_adder_4bit/src/number_adder_4bit.v",
+  "InstLine" : 23,
+  "InstName" : "number_adder_4bit",
+  "ModuleFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/number_adder_4bit/src/number_adder_4bit.v",
+  "ModuleLine" : 23,
+  "ModuleName" : "number_adder_4bit",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/number_adder_4bit/src/number_adder_4bit.v",
+    "InstLine" : 31,
+    "InstName" : "fa1",
+    "ModuleFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/number_adder_4bit/src/full_adder.v",
+    "ModuleLine" : 23,
+    "ModuleName" : "full_adder"
+   },
+   {
+    "InstFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/number_adder_4bit/src/number_adder_4bit.v",
+    "InstLine" : 32,
+    "InstName" : "fa2",
+    "ModuleFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/number_adder_4bit/src/full_adder.v",
+    "ModuleLine" : 23,
+    "ModuleName" : "full_adder"
+   },
+   {
+    "InstFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/number_adder_4bit/src/number_adder_4bit.v",
+    "InstLine" : 33,
+    "InstName" : "fa3",
+    "ModuleFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/number_adder_4bit/src/full_adder.v",
+    "ModuleLine" : 23,
+    "ModuleName" : "full_adder"
+   },
+   {
+    "InstFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/number_adder_4bit/src/number_adder_4bit.v",
+    "InstLine" : 34,
+    "InstName" : "fa4",
+    "ModuleFile" : "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/number_adder_4bit/src/full_adder.v",
+    "ModuleLine" : 23,
+    "ModuleName" : "full_adder"
+   }
+  ]
+ }
+]

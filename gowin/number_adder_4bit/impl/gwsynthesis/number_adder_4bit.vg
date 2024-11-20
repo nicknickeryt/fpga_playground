@@ -1,0 +1,262 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.10.03"
+//Wed Nov 20 20:05:33 2024
+
+//Source file index table:
+//file0 "\/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/number_adder_4bit/src/full_adder.v"
+//file1 "\/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/number_adder_4bit/src/number_adder_4bit.v"
+`timescale 100 ps/100 ps
+module full_adder (
+  a_d,
+  b_d,
+  xor_ab
+)
+;
+input [0:0] a_d;
+input [0:0] b_d;
+output xor_ab;
+wire VCC;
+wire GND;
+  LUT2 xor_ab_s0 (
+    .F(xor_ab),
+    .I0(a_d[0]),
+    .I1(b_d[0]) 
+);
+defparam xor_ab_s0.INIT=4'h6;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+endmodule /* full_adder */
+module full_adder_0 (
+  a_d,
+  b_d,
+  y_d
+)
+;
+input [1:0] a_d;
+input [1:0] b_d;
+output [1:1] y_d;
+wire VCC;
+wire GND;
+  LUT4 y_d_1_s (
+    .F(y_d[1]),
+    .I0(a_d[0]),
+    .I1(b_d[0]),
+    .I2(a_d[1]),
+    .I3(b_d[1]) 
+);
+defparam y_d_1_s.INIT=16'h8778;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+endmodule /* full_adder_0 */
+module full_adder_1 (
+  a_d,
+  b_d,
+  y_d_2_3,
+  y_d
+)
+;
+input [2:0] a_d;
+input [2:0] b_d;
+output y_d_2_3;
+output [2:2] y_d;
+wire VCC;
+wire GND;
+  LUT3 y_d_2_s (
+    .F(y_d[2]),
+    .I0(a_d[2]),
+    .I1(b_d[2]),
+    .I2(y_d_2_3) 
+);
+defparam y_d_2_s.INIT=8'h69;
+  LUT4 y_d_2_s0 (
+    .F(y_d_2_3),
+    .I0(a_d[1]),
+    .I1(b_d[1]),
+    .I2(a_d[0]),
+    .I3(b_d[0]) 
+);
+defparam y_d_2_s0.INIT=16'h1777;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+endmodule /* full_adder_1 */
+module full_adder_2 (
+  y_d_2_3,
+  a_d,
+  b_d,
+  y_d
+)
+;
+input y_d_2_3;
+input [3:2] a_d;
+input [3:2] b_d;
+output [4:3] y_d;
+wire y_d_3_3;
+wire y_d_4_3;
+wire y_d_4_4;
+wire y_d_4_5;
+wire VCC;
+wire GND;
+  LUT4 y_d_3_s (
+    .F(y_d[3]),
+    .I0(y_d_2_3),
+    .I1(a_d[2]),
+    .I2(b_d[2]),
+    .I3(y_d_3_3) 
+);
+defparam y_d_3_s.INIT=16'hD42B;
+  LUT4 y_d_4_s (
+    .F(y_d[4]),
+    .I0(y_d_4_3),
+    .I1(y_d_4_4),
+    .I2(y_d_4_5),
+    .I3(y_d_2_3) 
+);
+defparam y_d_4_s.INIT=16'h0307;
+  LUT2 y_d_3_s0 (
+    .F(y_d_3_3),
+    .I0(a_d[3]),
+    .I1(b_d[3]) 
+);
+defparam y_d_3_s0.INIT=4'h9;
+  LUT2 y_d_4_s0 (
+    .F(y_d_4_3),
+    .I0(a_d[2]),
+    .I1(b_d[2]) 
+);
+defparam y_d_4_s0.INIT=4'h1;
+  LUT4 y_d_4_s1 (
+    .F(y_d_4_4),
+    .I0(a_d[3]),
+    .I1(b_d[3]),
+    .I2(a_d[2]),
+    .I3(b_d[2]) 
+);
+defparam y_d_4_s1.INIT=16'h0777;
+  LUT2 y_d_4_s2 (
+    .F(y_d_4_5),
+    .I0(a_d[3]),
+    .I1(b_d[3]) 
+);
+defparam y_d_4_s2.INIT=4'h1;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+endmodule /* full_adder_2 */
+module number_adder_4bit (
+  a,
+  b,
+  y
+)
+;
+input [3:0] a;
+input [3:0] b;
+output [4:0] y;
+wire xor_ab;
+wire y_d_2_3;
+wire [3:0] a_d;
+wire [3:0] b_d;
+wire [1:1] y_d;
+wire [2:2] y_d_0;
+wire [4:3] y_d_1;
+wire VCC;
+wire GND;
+  IBUF a_0_ibuf (
+    .O(a_d[0]),
+    .I(a[0]) 
+);
+  IBUF a_1_ibuf (
+    .O(a_d[1]),
+    .I(a[1]) 
+);
+  IBUF a_2_ibuf (
+    .O(a_d[2]),
+    .I(a[2]) 
+);
+  IBUF a_3_ibuf (
+    .O(a_d[3]),
+    .I(a[3]) 
+);
+  IBUF b_0_ibuf (
+    .O(b_d[0]),
+    .I(b[0]) 
+);
+  IBUF b_1_ibuf (
+    .O(b_d[1]),
+    .I(b[1]) 
+);
+  IBUF b_2_ibuf (
+    .O(b_d[2]),
+    .I(b[2]) 
+);
+  IBUF b_3_ibuf (
+    .O(b_d[3]),
+    .I(b[3]) 
+);
+  OBUF y_0_obuf (
+    .O(y[0]),
+    .I(xor_ab) 
+);
+  OBUF y_1_obuf (
+    .O(y[1]),
+    .I(y_d[1]) 
+);
+  OBUF y_2_obuf (
+    .O(y[2]),
+    .I(y_d_0[2]) 
+);
+  OBUF y_3_obuf (
+    .O(y[3]),
+    .I(y_d_1[3]) 
+);
+  OBUF y_4_obuf (
+    .O(y[4]),
+    .I(y_d_1[4]) 
+);
+  full_adder fa1 (
+    .a_d(a_d[0]),
+    .b_d(b_d[0]),
+    .xor_ab(xor_ab)
+);
+  full_adder_0 fa2 (
+    .a_d(a_d[1:0]),
+    .b_d(b_d[1:0]),
+    .y_d(y_d[1])
+);
+  full_adder_1 fa3 (
+    .a_d(a_d[2:0]),
+    .b_d(b_d[2:0]),
+    .y_d_2_3(y_d_2_3),
+    .y_d(y_d_0[2])
+);
+  full_adder_2 fa4 (
+    .y_d_2_3(y_d_2_3),
+    .a_d(a_d[3:2]),
+    .b_d(b_d[3:2]),
+    .y_d(y_d_1[4:3])
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* number_adder_4bit */

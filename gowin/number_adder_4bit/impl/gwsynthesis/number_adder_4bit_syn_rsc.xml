@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="number_adder_4bit" T_Lut="10(0)">
+ <SubModule name="fa1" Lut="1" T_Lut="1(1)"/>
+ <SubModule name="fa2" Lut="1" T_Lut="1(1)"/>
+ <SubModule name="fa3" Lut="2" T_Lut="2(2)"/>
+ <SubModule name="fa4" Lut="6" T_Lut="6(6)"/>
+</Module>
