@@ -1,7 +1,7 @@
 //
 //Written by GowinSynthesis
 //Tool Version "V1.9.10.03"
-//Wed Nov 20 23:30:38 2024
+//Wed Nov 20 23:57:23 2024
 
 //Source file index table:
 //file0 "\/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/7seg_test/src/seg7.v"
@@ -15,7 +15,8 @@ module seg7 (
   e,
   f,
   g,
-  com
+  com,
+  leds
 )
 ;
 input [3:0] x;
@@ -27,6 +28,7 @@ output e;
 output f;
 output g;
 output com;
+output [3:0] leds;
 wire a_d;
 wire b_d;
 wire c_d;
@@ -34,23 +36,23 @@ wire d_d;
 wire e_d;
 wire f_d;
 wire g_d;
-wire [3:0] x_d;
+wire [3:0] leds_d;
 wire VCC;
 wire GND;
   IBUF x_0_ibuf (
-    .O(x_d[0]),
+    .O(leds_d[0]),
     .I(x[0]) 
 );
   IBUF x_1_ibuf (
-    .O(x_d[1]),
+    .O(leds_d[1]),
     .I(x[1]) 
 );
   IBUF x_2_ibuf (
-    .O(x_d[2]),
+    .O(leds_d[2]),
     .I(x[2]) 
 );
   IBUF x_3_ibuf (
-    .O(x_d[3]),
+    .O(leds_d[3]),
     .I(x[3]) 
 );
   OBUF a_obuf (
@@ -85,57 +87,73 @@ wire GND;
     .O(com),
     .I(GND) 
 );
+  OBUF leds_0_obuf (
+    .O(leds[0]),
+    .I(leds_d[0]) 
+);
+  OBUF leds_1_obuf (
+    .O(leds[1]),
+    .I(leds_d[1]) 
+);
+  OBUF leds_2_obuf (
+    .O(leds[2]),
+    .I(leds_d[2]) 
+);
+  OBUF leds_3_obuf (
+    .O(leds[3]),
+    .I(leds_d[3]) 
+);
   LUT4 a_d_s (
     .F(a_d),
-    .I0(x_d[1]),
-    .I1(x_d[3]),
-    .I2(x_d[2]),
-    .I3(x_d[0]) 
+    .I0(leds_d[1]),
+    .I1(leds_d[3]),
+    .I2(leds_d[2]),
+    .I3(leds_d[0]) 
 );
 defparam a_d_s.INIT=16'hFEEF;
   LUT3 b_d_s (
     .F(b_d),
-    .I0(x_d[0]),
-    .I1(x_d[1]),
-    .I2(x_d[2]) 
+    .I0(leds_d[0]),
+    .I1(leds_d[1]),
+    .I2(leds_d[2]) 
 );
 defparam b_d_s.INIT=8'h9F;
   LUT3 c_d_s (
     .F(c_d),
-    .I0(x_d[2]),
-    .I1(x_d[0]),
-    .I2(x_d[1]) 
+    .I0(leds_d[2]),
+    .I1(leds_d[0]),
+    .I2(leds_d[1]) 
 );
 defparam c_d_s.INIT=8'hEF;
   LUT4 d_d_s (
     .F(d_d),
-    .I0(x_d[3]),
-    .I1(x_d[1]),
-    .I2(x_d[2]),
-    .I3(x_d[0]) 
+    .I0(leds_d[3]),
+    .I1(leds_d[1]),
+    .I2(leds_d[2]),
+    .I3(leds_d[0]) 
 );
 defparam d_d_s.INIT=16'hBEEF;
   LUT3 e_d_s (
     .F(e_d),
-    .I0(x_d[1]),
-    .I1(x_d[2]),
-    .I2(x_d[0]) 
+    .I0(leds_d[1]),
+    .I1(leds_d[2]),
+    .I2(leds_d[0]) 
 );
 defparam e_d_s.INIT=8'h0B;
   LUT4 f_d_s (
     .F(f_d),
-    .I0(x_d[2]),
-    .I1(x_d[0]),
-    .I2(x_d[1]),
-    .I3(x_d[3]) 
+    .I0(leds_d[2]),
+    .I1(leds_d[0]),
+    .I2(leds_d[1]),
+    .I3(leds_d[3]) 
 );
 defparam f_d_s.INIT=16'hFF2B;
   LUT4 g_d_s (
     .F(g_d),
-    .I0(x_d[0]),
-    .I1(x_d[3]),
-    .I2(x_d[1]),
-    .I3(x_d[2]) 
+    .I0(leds_d[0]),
+    .I1(leds_d[3]),
+    .I2(leds_d[1]),
+    .I3(leds_d[2]) 
 );
 defparam g_d_s.INIT=16'hDFFC;
   VCC VCC_cZ (
