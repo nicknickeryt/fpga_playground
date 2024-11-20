@@ -1,0 +1,29 @@
+Reading netlist file: "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/7seg_test/impl/gwsynthesis/7seg_test.vg"
+Parsing netlist file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/7seg_test/impl/gwsynthesis/7seg_test.vg" completed
+Processing netlist completed
+Reading constraint file: "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/7seg_test/src/7seg_test.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/7seg_test/impl/pnr/7seg_test.power.html" completed
+Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/7seg_test/impl/pnr/7seg_test.pin.html" completed
+Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/7seg_test/impl/pnr/7seg_test.rpt.html" completed
+Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/7seg_test/impl/pnr/7seg_test.rpt.txt" completed
+Generate file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/7seg_test/impl/pnr/7seg_test.tr.html" completed
+Wed Nov 20 23:30:44 2024
+

@@ -1,0 +1,14 @@
+-d /home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/7seg_test/impl/gwsynthesis/7seg_test.vg
+-p GW1NSR-4C-QFN48P-7
+-pn GW1NSR-LV4CQN48PC7/I6
+-cst /home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/7seg_test/src/7seg_test.cst
+-cfg /home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/7seg_test/impl/pnr/device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-correct_hold 1
+-route_maxfan 23
+-global_freq 50.000

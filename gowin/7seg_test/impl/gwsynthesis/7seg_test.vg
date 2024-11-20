@@ -1,0 +1,150 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.10.03"
+//Wed Nov 20 23:30:38 2024
+
+//Source file index table:
+//file0 "\/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/gowin/7seg_test/src/seg7.v"
+`timescale 100 ps/100 ps
+module seg7 (
+  x,
+  a,
+  b,
+  c,
+  d,
+  e,
+  f,
+  g,
+  com
+)
+;
+input [3:0] x;
+output a;
+output b;
+output c;
+output d;
+output e;
+output f;
+output g;
+output com;
+wire a_d;
+wire b_d;
+wire c_d;
+wire d_d;
+wire e_d;
+wire f_d;
+wire g_d;
+wire [3:0] x_d;
+wire VCC;
+wire GND;
+  IBUF x_0_ibuf (
+    .O(x_d[0]),
+    .I(x[0]) 
+);
+  IBUF x_1_ibuf (
+    .O(x_d[1]),
+    .I(x[1]) 
+);
+  IBUF x_2_ibuf (
+    .O(x_d[2]),
+    .I(x[2]) 
+);
+  IBUF x_3_ibuf (
+    .O(x_d[3]),
+    .I(x[3]) 
+);
+  OBUF a_obuf (
+    .O(a),
+    .I(a_d) 
+);
+  OBUF b_obuf (
+    .O(b),
+    .I(b_d) 
+);
+  OBUF c_obuf (
+    .O(c),
+    .I(c_d) 
+);
+  OBUF d_obuf (
+    .O(d),
+    .I(d_d) 
+);
+  OBUF e_obuf (
+    .O(e),
+    .I(e_d) 
+);
+  OBUF f_obuf (
+    .O(f),
+    .I(f_d) 
+);
+  OBUF g_obuf (
+    .O(g),
+    .I(g_d) 
+);
+  OBUF com_obuf (
+    .O(com),
+    .I(GND) 
+);
+  LUT4 a_d_s (
+    .F(a_d),
+    .I0(x_d[1]),
+    .I1(x_d[3]),
+    .I2(x_d[2]),
+    .I3(x_d[0]) 
+);
+defparam a_d_s.INIT=16'hFEEF;
+  LUT3 b_d_s (
+    .F(b_d),
+    .I0(x_d[0]),
+    .I1(x_d[1]),
+    .I2(x_d[2]) 
+);
+defparam b_d_s.INIT=8'h9F;
+  LUT3 c_d_s (
+    .F(c_d),
+    .I0(x_d[2]),
+    .I1(x_d[0]),
+    .I2(x_d[1]) 
+);
+defparam c_d_s.INIT=8'hEF;
+  LUT4 d_d_s (
+    .F(d_d),
+    .I0(x_d[3]),
+    .I1(x_d[1]),
+    .I2(x_d[2]),
+    .I3(x_d[0]) 
+);
+defparam d_d_s.INIT=16'hBEEF;
+  LUT3 e_d_s (
+    .F(e_d),
+    .I0(x_d[1]),
+    .I1(x_d[2]),
+    .I2(x_d[0]) 
+);
+defparam e_d_s.INIT=8'h0B;
+  LUT4 f_d_s (
+    .F(f_d),
+    .I0(x_d[2]),
+    .I1(x_d[0]),
+    .I2(x_d[1]),
+    .I3(x_d[3]) 
+);
+defparam f_d_s.INIT=16'hFF2B;
+  LUT4 g_d_s (
+    .F(g_d),
+    .I0(x_d[0]),
+    .I1(x_d[3]),
+    .I2(x_d[1]),
+    .I3(x_d[2]) 
+);
+defparam g_d_s.INIT=16'hDFFC;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* seg7 */
