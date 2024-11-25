@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-// Grey counter 3 bit 0 -> 6
+// Gray counter 3 bit 0 -> 6
 module counter_grey(
 input clk,
 output [2:0] Q
@@ -35,6 +35,6 @@ always @(posedge clk) begin
         qbin = qbin + 1;
 end
 
-assign Q = qbin ^ (qbin >> 1);
+assign Q = qbin ^ (qbin >> 1);      // Gray code = (binary) xor (binary right bitshift 1) 
 
 endmodule
