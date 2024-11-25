@@ -1,0 +1,4 @@
+Running: xsim.dir/shifter_left_right_parallel_tb_behav/xsimk -simmode gui -wdb shifter_left_right_parallel_tb_behav.wdb -simrunnum 0 -socket 49851
+Design successfully loaded
+Design Loading Memory Usage: 20000 KB (Peak: 20588 KB)
+Design Loading CPU Usage: 30 ms
