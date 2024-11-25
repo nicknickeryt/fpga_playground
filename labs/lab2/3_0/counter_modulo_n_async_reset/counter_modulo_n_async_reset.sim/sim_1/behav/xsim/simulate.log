@@ -1,0 +1,2 @@
+Time resolution is 1 ps
+$finish called at time : 260 ns : File "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab2/3_0/counter_modulo_n_async_reset/counter_modulo_n_async_reset.srcs/sim_1/new/counter_modulo_n_async_reset_tb.v" Line 57
