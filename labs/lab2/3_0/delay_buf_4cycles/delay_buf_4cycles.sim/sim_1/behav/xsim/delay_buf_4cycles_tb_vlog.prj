@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../delay_buf_4cycles.srcs/sources_1/new/delay_buf_4cycles.v" \
+"../../../../delay_buf_4cycles.srcs/sim_1/new/delay_buf_4cycles_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
