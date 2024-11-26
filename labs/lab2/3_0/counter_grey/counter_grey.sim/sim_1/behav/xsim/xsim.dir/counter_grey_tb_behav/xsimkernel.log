@@ -2,3 +2,6 @@ Running: xsim.dir/counter_grey_tb_behav/xsimk -simmode gui -wdb counter_grey_tb_
 Design successfully loaded
 Design Loading Memory Usage: 19996 KB (Peak: 20584 KB)
 Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 101732 KB (Peak: 159264 KB)
+Simulation CPU Usage: 30 ms
