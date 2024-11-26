@@ -36,7 +36,7 @@ module counter_modulo_n_up_l(
         if(ce)
             if(l) q <= d;
             else if(up)
-                if(q >= N-1) q <= 0;
+                if(q >= N-1) q <= 0; // note: say we have modulo 5 counter and we write 6 to d, so the counter should reset ASAP
                 else q <= q + 1;
             else
                 if(q==0) q <= N-1;
