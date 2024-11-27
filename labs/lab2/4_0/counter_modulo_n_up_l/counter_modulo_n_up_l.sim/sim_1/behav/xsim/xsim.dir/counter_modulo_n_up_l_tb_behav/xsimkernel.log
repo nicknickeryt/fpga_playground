@@ -2,3 +2,6 @@ Running: xsim.dir/counter_modulo_n_up_l_tb_behav/xsimk -simmode gui -wdb counter
 Design successfully loaded
 Design Loading Memory Usage: 20004 KB (Peak: 20588 KB)
 Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 102000 KB (Peak: 159272 KB)
+Simulation CPU Usage: 20 ms
