@@ -2,3 +2,6 @@ Running: xsim.dir/shift_register_multiply_subtract_tb_behav/xsimk -simmode gui -
 Design successfully loaded
 Design Loading Memory Usage: 20004 KB (Peak: 20588 KB)
 Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 102000 KB (Peak: 159272 KB)
+Simulation CPU Usage: 20 ms
