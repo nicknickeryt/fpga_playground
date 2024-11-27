@@ -1,0 +1,4 @@
+Running: xsim.dir/shift_register_multiply_subtract_tb_behav/xsimk -simmode gui -wdb shift_register_multiply_subtract_tb_behav.wdb -simrunnum 0 -socket 52537
+Design successfully loaded
+Design Loading Memory Usage: 20004 KB (Peak: 20588 KB)
+Design Loading CPU Usage: 10 ms
