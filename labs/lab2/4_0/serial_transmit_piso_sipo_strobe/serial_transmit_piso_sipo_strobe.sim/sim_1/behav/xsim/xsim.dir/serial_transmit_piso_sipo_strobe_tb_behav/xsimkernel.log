@@ -1,0 +1,7 @@
+Running: xsim.dir/serial_transmit_piso_sipo_strobe_tb_behav/xsimk -simmode gui -wdb serial_transmit_piso_sipo_strobe_tb_behav.wdb -simrunnum 0 -socket 59479
+Design successfully loaded
+Design Loading Memory Usage: 20008 KB (Peak: 20588 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 102264 KB (Peak: 159276 KB)
+Simulation CPU Usage: 20 ms

@@ -1,0 +1,9 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab2/4_0/serial_transmit_piso_sipo_strobe/serial_transmit_piso_sipo_strobe.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab2/4_0/serial_transmit_piso_sipo_strobe/serial_transmit_piso_sipo_strobe.srcs/sim_1/new/serial_transmit_piso_sipo_strobe_tb.v,1732667914,verilog,,,,serial_transmit_piso_sipo_strobe_tb,,,,,,,,
+/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab2/4_0/serial_transmit_piso_sipo_strobe/serial_transmit_piso_sipo_strobe.srcs/sources_1/new/piso.v,1732666586,verilog,,/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab2/4_0/serial_transmit_piso_sipo_strobe/serial_transmit_piso_sipo_strobe.srcs/sources_1/new/serial_transmit_piso_sipo_strobe.v,,piso,,,,,,,,
+/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab2/4_0/serial_transmit_piso_sipo_strobe/serial_transmit_piso_sipo_strobe.srcs/sources_1/new/serial_transmit_piso_sipo_strobe.v,1732668227,verilog,,/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab2/4_0/serial_transmit_piso_sipo_strobe/serial_transmit_piso_sipo_strobe.srcs/sources_1/new/sipo.v,,serial_transmit_piso_sipo_strobe,,,,,,,,
+/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab2/4_0/serial_transmit_piso_sipo_strobe/serial_transmit_piso_sipo_strobe.srcs/sources_1/new/sipo.v,1732668055,verilog,,/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab2/4_0/serial_transmit_piso_sipo_strobe/serial_transmit_piso_sipo_strobe.srcs/sim_1/new/serial_transmit_piso_sipo_strobe_tb.v,,sipo,,,,,,,,
