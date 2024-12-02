@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../oversampling_8x.srcs/sources_1/new/oversampling_8x.v" \
+"../../../../oversampling_8x.srcs/sim_1/new/oversampling_8x_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
