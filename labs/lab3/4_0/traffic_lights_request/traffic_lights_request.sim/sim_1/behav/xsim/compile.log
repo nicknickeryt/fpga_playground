@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab3/4_0/traffic_lights_request/traffic_lights_request.srcs/sources_1/new/traffic_lights_request.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module traffic_lights_request
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab3/4_0/traffic_lights_request/traffic_lights_request.srcs/sim_1/new/traffic_lights_request_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module traffic_lights_request_tb
