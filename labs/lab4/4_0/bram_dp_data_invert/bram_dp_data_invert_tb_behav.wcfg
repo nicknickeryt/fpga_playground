@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="bram_dp_data_invert_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="bram_dp_data_invert_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="585.000 ns"></ZoomEndTime>
+      <Cursor1Time time="190.890 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="183"></NameColumnWidth>
+      <ValueColumnWidth column_width="123"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wave_markers>
+      <marker label="" time="364426" />
+      <marker label="" time="395000" />
+      <marker label="" time="385000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/bram_dp_data_invert_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_dp_data_invert_tb/convert">
+      <obj_property name="ElementShortName">convert</obj_property>
+      <obj_property name="ObjectShortName">convert</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_dp_data_invert_tb/writeViaB">
+      <obj_property name="ElementShortName">writeViaB</obj_property>
+      <obj_property name="ObjectShortName">writeViaB</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_dp_data_invert_tb/readViaB">
+      <obj_property name="ElementShortName">readViaB</obj_property>
+      <obj_property name="ObjectShortName">readViaB</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_dp_data_invert_tb/writeViaBAddr">
+      <obj_property name="ElementShortName">writeViaBAddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">writeViaBAddr[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_dp_data_invert_tb/writeViaBDin">
+      <obj_property name="ElementShortName">writeViaBDin[7:0]</obj_property>
+      <obj_property name="ObjectShortName">writeViaBDin[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_dp_data_invert_tb/weA">
+      <obj_property name="ElementShortName">weA</obj_property>
+      <obj_property name="ObjectShortName">weA</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_dp_data_invert_tb/addrA">
+      <obj_property name="ElementShortName">addrA[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addrA[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_dp_data_invert_tb/dinA">
+      <obj_property name="ElementShortName">dinA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dinA[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_dp_data_invert_tb/doutA">
+      <obj_property name="ElementShortName">doutA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">doutA[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bram_dp_data_invert_tb/weB">
+      <obj_property name="ElementShortName">weB</obj_property>
+      <obj_property name="ObjectShortName">weB</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_dp_data_invert_tb/addrB">
+      <obj_property name="ElementShortName">addrB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addrB[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_dp_data_invert_tb/dinB">
+      <obj_property name="ElementShortName">dinB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dinB[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_dp_data_invert_tb/doutB">
+      <obj_property name="ElementShortName">doutB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">doutB[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_dp_data_invert_tb/dataToWrite">
+      <obj_property name="ElementShortName">dataToWrite[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataToWrite[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_dp_data_invert_tb/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_dp_data_invert_tb/awidth">
+      <obj_property name="ElementShortName">awidth[31:0]</obj_property>
+      <obj_property name="ObjectShortName">awidth[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bram_dp_data_invert_tb/dwidth">
+      <obj_property name="ElementShortName">dwidth[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dwidth[31:0]</obj_property>
+   </wvobject>
+</wave_config>
