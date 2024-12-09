@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Desktop/vivado cue/zad7_na4_automaty/zad7_na4_automaty.srcs/sources_1/new/auto.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module auto
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Desktop/vivado cue/zad7_na4_automaty/zad7_na4_automaty.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

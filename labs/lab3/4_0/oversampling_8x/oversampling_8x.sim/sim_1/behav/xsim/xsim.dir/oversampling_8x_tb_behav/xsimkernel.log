@@ -2,3 +2,6 @@ Running: xsim.dir/oversampling_8x_tb_behav/xsimk -simmode gui -wdb oversampling_
 Design successfully loaded
 Design Loading Memory Usage: 20000 KB (Peak: 20584 KB)
 Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 101996 KB (Peak: 159268 KB)
+Simulation CPU Usage: 30 ms
