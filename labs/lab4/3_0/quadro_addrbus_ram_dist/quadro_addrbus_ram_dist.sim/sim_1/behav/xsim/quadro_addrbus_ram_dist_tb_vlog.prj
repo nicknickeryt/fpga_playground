@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../quadro_addrbus_ram_dist.srcs/sources_1/new/quadro_addrbus_ram_dist.v" \
+"../../../../quadro_addrbus_ram_dist.srcs/sources_1/imports/res/ram_dist.v" \
+"../../../../quadro_addrbus_ram_dist.srcs/sim_1/new/quadro_addrbus_ram_dist_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

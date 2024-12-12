@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "quadro_addrbus_ram_dist_tb_behav" "xil_defaultlib.quadro_addrbus_ram_dist_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

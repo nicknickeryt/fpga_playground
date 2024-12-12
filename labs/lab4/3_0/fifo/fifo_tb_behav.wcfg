@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fifo_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fifo_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
+      <Cursor1Time time="429.356 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="183"></NameColumnWidth>
+      <ValueColumnWidth column_width="123"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wave_markers>
+      <marker label="" time="120094" />
+      <marker label="" time="221350" />
+      <marker label="" time="320000" />
+      <marker label="" time="370000" />
+      <marker label="" time="570000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/fifo_tb/CLK">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fifo_tb/DI">
+      <obj_property name="ElementShortName">DI[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DI[15:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_tb/RDEN">
+      <obj_property name="ElementShortName">RDEN</obj_property>
+      <obj_property name="ObjectShortName">RDEN</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_tb/RST">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_tb/WREN">
+      <obj_property name="ElementShortName">WREN</obj_property>
+      <obj_property name="ObjectShortName">WREN</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_tb/ALMOSTEMPTY">
+      <obj_property name="ElementShortName">ALMOSTEMPTY</obj_property>
+      <obj_property name="ObjectShortName">ALMOSTEMPTY</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_tb/ALMOSTFULL">
+      <obj_property name="ElementShortName">ALMOSTFULL</obj_property>
+      <obj_property name="ObjectShortName">ALMOSTFULL</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_tb/EMPTY">
+      <obj_property name="ElementShortName">EMPTY</obj_property>
+      <obj_property name="ObjectShortName">EMPTY</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_tb/FULL">
+      <obj_property name="ElementShortName">FULL</obj_property>
+      <obj_property name="ObjectShortName">FULL</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_tb/RDERR">
+      <obj_property name="ElementShortName">RDERR</obj_property>
+      <obj_property name="ObjectShortName">RDERR</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fifo_tb/WRERR">
+      <obj_property name="ElementShortName">WRERR</obj_property>
+      <obj_property name="ObjectShortName">WRERR</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fifo_tb/DO">
+      <obj_property name="ElementShortName">DO[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DO[15:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fifo_tb/RDCOUNT">
+      <obj_property name="ElementShortName">RDCOUNT[9:0]</obj_property>
+      <obj_property name="ObjectShortName">RDCOUNT[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fifo_tb/WRCOUNT">
+      <obj_property name="ElementShortName">WRCOUNT[9:0]</obj_property>
+      <obj_property name="ObjectShortName">WRCOUNT[9:0]</obj_property>
+   </wvobject>
+</wave_config>

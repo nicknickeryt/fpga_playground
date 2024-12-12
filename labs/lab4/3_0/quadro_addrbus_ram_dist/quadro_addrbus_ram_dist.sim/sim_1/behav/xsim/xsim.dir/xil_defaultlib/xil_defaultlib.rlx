@@ -1,0 +1,8 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab4/3_0/quadro_addrbus_ram_dist/quadro_addrbus_ram_dist.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab4/3_0/quadro_addrbus_ram_dist/quadro_addrbus_ram_dist.srcs/sim_1/new/quadro_addrbus_ram_dist_tb.v,1733962366,verilog,,,,quadro_addrbus_ram_dist_tb,,,,,,,,
+/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab4/3_0/quadro_addrbus_ram_dist/quadro_addrbus_ram_dist.srcs/sources_1/imports/res/ram_dist.v,1704984116,verilog,,/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab4/3_0/quadro_addrbus_ram_dist/quadro_addrbus_ram_dist.srcs/sim_1/new/quadro_addrbus_ram_dist_tb.v,,ram_dist,,,,,,,,
+/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab4/3_0/quadro_addrbus_ram_dist/quadro_addrbus_ram_dist.srcs/sources_1/new/quadro_addrbus_ram_dist.v,1733962076,verilog,,/home/nick/Dokumenty/AGH/CUE/Verilog/repo/fpga_playground/labs/lab4/3_0/quadro_addrbus_ram_dist/quadro_addrbus_ram_dist.srcs/sources_1/imports/res/ram_dist.v,,quadro_addrbus_ram_dist,,,,,,,,
